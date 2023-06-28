@@ -1,1 +1,1 @@
-# rsschool-cv
+https://geratw.github.io/rsschool-cv/cv
