@@ -1,100 +1,165 @@
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>CV</title>
+    <title>Orekhovsky Maxim CV</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="icon" href="image/cv.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="cv-container">
-        <div class="left-column">
-            <img class="portait" src="dog.jpeg" />
-            <div class="section">
-                <h2>Summary</h2>
-                <p>
-                    Hi, I'm a novice frontend developer. At the moment I am studying at programming school 21.
-                    I am purposeful, I really like to study.I have excellent communication skills, excel in a team environment and strive for
-                    constantself-improvement.
-                </p>
-            </div>
-            <div class="section">
-                <h2>Skills</h2>
-                <ul class="skills">
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>Programming Languages:</strong>
-                    </li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> C &#124 C++ &#124 HTML5 &#124 CSS3</li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>Frameworks</strong></li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> QT</li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>Version Control Systems:</strong>
-                    </li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> Git</li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>Development Tools:</strong></li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> Visual Studio Code, Docker</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h2>English Language Proficiency</h2>
-                <p>
-                    Level: Beginner (А1)
-                </p>
-            </div>
-        </div>
-        <div class="right-column">
-            <div class="header">
-                <h1>Orekhovsky <span class="text-blue text-uppercase">Maxim</span></h1>
-                <ul class="infos">
-                    <li сlass="margin-tops">
-                        <p style="display: inline;">Email:</p>
-                        <a href="maksim.orehovskii@gmail.com">maksim.orehovskii@gmail.com</a>
-                    </li>
-                    <li сlass="margin-tops">Telegram: @brenettg</li>
-                    <li сlass="margin-tops">Discord: brenet1</li>
-                </ul>
-            </div>
-            <div class="content">
-                <div class="section">
-                    <h2>Experience</h2>
-                    <p class="text-with-linebreaks">Created a Todo application using JavaScript
-                        Implemented functions such as
-                    <ul>
-                        <li>adding tasks</li>
-                        <li>marking them as completed</li>
-                        <li>deleting tasks</li>
-                    </ul>
-                    <p>you can find it on the page <a href="https://github.com/geratw/To-DoList">GitHub</a></p>
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#contact">Contact</a></li>
+                <li class="nav__item"><a href="#summary">Summary</a></li>
+                <li class="nav__item"><a href="#experience">Experience</a></li>
+                <li class="nav__item"><a href="#education">Education</a></li>
+                <li class="nav__item"><a href="#code-example">Code Example</a></li>
+                <li class="nav__item"><a href="#skills">Skills</a></li>
+                <li class="nav__item"><a href="#language-proficiency">Language Proficiency</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                    </p>
-                </div>
+    <main>
+        <div class="cv-container">
+            <div class="left-column">
+                <img class="portrait" src="image/dog.jpeg" alt="portrait"/>
                 <div class="section">
-                    <h2>Education <br></h2>
-                    <h3 class="text-blue">Basic education:</h3>
-                    <p>
-                        Secondary vocational (college). Education is not related to programming.
-                    </p>
-                    <h3 class="text-blue">Courses:</h3>
-                    <ul>
-                        <li>
-                            FreeCodeCamp(js, html + css)
+                    <h2 class="section-title" id="Contact">Contact</h2>
+                    <ul class="contact__list">
+                        <li class="contact__item skills">
+                            Discord:
+                            <p class="text-lowercase">
+                                brenet1
+                            </p>
                         </li>
-                        <li>Jetbrains academy (js, SQL)</li>
+                        <li class="contact__item skills">
+                            Email: <a href="maksim.orehovskii@gmail.com">
+                                <p class="text-lowercase">
+                                    maksim.orehovskii@gmail.com
+                                </p>
+                            </a>
+                        </li>
+                        <li class="contact__item skills">
+                            telegram: <br>
+                            <p class="text-lowercase">
+                                @brenettg
+                            </p>
+
+                        </li>
                     </ul>
                 </div>
                 <div class="section">
-                    <h2>Code Example</h2>
-                    <code>function multiply(a, b){ </br>
-                        &nbsp;return a * b </br>
-                    }
-                    </code>
+                    <h2 class="section-title" id="summary">Summary</h2>
+                    <p class="summary">
+                        Hi, I'm a novice frontend developer. At the moment I am studying at programming school 21.
+                        I am purposeful, I really like to study.I have excellent communication skills, excel in a team
+                        environment and strive for
+                        constantself-improvement.
+                    </p>
+                </div>
+                <div class="section">
+                    <h2 class="section-title" id="skills">Skills</h2>
+                    <ul class="skills">
+                        <li><strong>Programming Languages:</strong>
+                        </li>
+                        <li>C &#124 C++ &#124 HTML5 &#124 CSS3</li>
+                        <li><strong>Frameworks</strong></li>
+                        <li>QT</li>
+                        <li><strong>Version Control Systems:</strong>
+                        </li>
+                        <li>Git</li>
+                        <li><strong>Development Tools:</strong></li>
+                        <li>Visual Studio Code, Docker</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2 class="section-title" id="language-proficiency">Language Proficiency</h2>
+                    <p class="skills">
+                        English Level: Beginner (А1)
+                    </p>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="content">
+                    <div class="section">
+                        <section class="names">
+                            <h1>Orekhovsky Maxim</h1>
+                            <h2 class="status">Front-End developer</h2>
+                        </section>
+                        <hr class="divider">
+                        <div class="section add_description" id="experience">
+                            <h2 class="section-title2">Experience</h2>
+                        </div>
+                        <figure>
+                            <figcaption class="image_caption">
+                                <p style="font-size: 28px;">TODO LIST</p>
+                                <img class="image_language" src="image/icons-html.png" alt="HTML5" title="HTML5">
+                                <img class="image_language" src="image/icons-css.png" alt="CSS3" title="CSS3">
+                                <img class="image_language" src="image/icons-javascript.png" alt="JavaScript"
+                                    title="JavaScript">
+                            </figcaption>
+                            <p><a href="https://github.com/geratw/To-DoList"><img class="image_project"
+                                        src="image/todo.png" alt="My ToDo"></a></p>
+                            <div>Created a Todo application using JavaScript. <br>
+                                Implemented functions such as
+                                <ul>
+                                    <li class="marker">Adding tasks</li>
+                                    <li class="marker">Marking them as completed</li>
+                                    <li class="marker">Deleting tasks</li>
+                                </ul>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="section" id="education">
+                        <h2 class="section-title2">Education <br></h2>
+                        <h3 class="text-blue">Basic education:</h3>
+                        <p> Secondary vocational (college). Education is not related to programming. </p>
+                        <h3 class="text-blue">Courses:</h3>
+                        <ul>
+                            <li class="marker">FreeCodeCamp(js, html + css)</li>
+                            <li class="marker">Jetbrains academy (js, SQL)</li>
+                            <li class="marker">Programming school 21</li>
+                        </ul>
+                    </div>
+                    <div class="section" id="code-example">
+                        <h2 class="section-title2">Code Example</h2>
+                    </div>
+                    <div class="code-window">
+                        <div style="background-color: black;color: aliceblue;">
+                            <p class="language_prog">JavaScript<button class="btn" onclick="copyCode()">Copy</button>
+                            </p>
+                        </div>
+                        <code style="border: 1px solid gray;"><p style="margin-left: 15px;">
+function multiply(a, b) {
+    return a * b;
+}</p></code>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="footer-bs">
+        <div class="contact-links">
+            <a id="profile-link" href="https://github.com/geratw" target="_blank" class="year contact-details "
+                style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://rs.school/js/" class="contact-details"><img class="rs_image" src="image/rs_school_js.svg">
+            </a>
+            <p class="contact-details year creates">© 2023 by Orekhovsky Maxim</p>
+
+        </div>
+    </footer>
+
+    <script defer src="scripts/script.js"></script>
 </body>
 
 </html>
+
