@@ -15,14 +15,14 @@
 <body>
     <header>
         <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#contact">Contact</a></li>
-                <li class="nav__item"><a href="#summary">Summary</a></li>
-                <li class="nav__item"><a href="#experience">Experience</a></li>
-                <li class="nav__item"><a href="#education">Education</a></li>
-                <li class="nav__item"><a href="#code-example">Code Example</a></li>
-                <li class="nav__item"><a href="#skills">Skills</a></li>
-                <li class="nav__item"><a href="#language-proficiency">Language Proficiency</a></li>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="#summary">Summary</a></li>
+                <li class="nav-item"><a href="#experience">Experience</a></li>
+                <li class="nav-item"><a href="#education">Education</a></li>
+                <li class="nav-item"><a href="#code-example">Code Example</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#language-proficiency">Language Proficiency</a></li>
             </ul>
         </nav>
     </header>
@@ -33,21 +33,21 @@
                 <img class="portrait" src="image/dog.jpeg" alt="portrait"/>
                 <div class="section">
                     <h2 class="section-title" id="Contact">Contact</h2>
-                    <ul class="contact__list">
-                        <li class="contact__item skills">
+                    <ul>
+                        <li class="contact-item skills">
                             Discord:
                             <p class="text-lowercase">
                                 brenet1
                             </p>
                         </li>
-                        <li class="contact__item skills">
+                        <li class="contact-item skills">
                             Email: <a href="maksim.orehovskii@gmail.com">
                                 <p class="text-lowercase">
                                     maksim.orehovskii@gmail.com
                                 </p>
                             </a>
                         </li>
-                        <li class="contact__item skills">
+                        <li class="contact-item skills">
                             telegram: <br>
                             <p class="text-lowercase">
                                 @brenettg
@@ -95,18 +95,18 @@
                             <h2 class="status">Front-End developer</h2>
                         </section>
                         <hr class="divider">
-                        <div class="section add_description" id="experience">
+                        <div class="section" id="experience">
                             <h2 class="section-title2">Experience</h2>
                         </div>
                         <figure>
-                            <figcaption class="image_caption">
+                            <figcaption class="image-caption">
                                 <p style="font-size: 28px;">TODO LIST</p>
-                                <img class="image_language" src="image/icons-html.png" alt="HTML5" title="HTML5">
-                                <img class="image_language" src="image/icons-css.png" alt="CSS3" title="CSS3">
-                                <img class="image_language" src="image/icons-javascript.png" alt="JavaScript"
+                                <img class="image-language" src="image/icons-html.png" alt="HTML5" title="HTML5">
+                                <img class="image-language" src="image/icons-css.png" alt="CSS3" title="CSS3">
+                                <img class="image-language" src="image/icons-javascript.png" alt="JavaScript"
                                     title="JavaScript">
                             </figcaption>
-                            <p><a href="https://github.com/geratw/To-DoList"><img class="image_project"
+                            <p><a href="https://github.com/geratw/To-DoList"><img class="image-project"
                                         src="image/todo.png" alt="My ToDo"></a></p>
                             <div>Created a Todo application using JavaScript. <br>
                                 Implemented functions such as
@@ -134,7 +134,7 @@
                     </div>
                     <div class="code-window">
                         <div style="background-color: black;color: aliceblue;">
-                            <p class="language_prog">JavaScript<button class="btn" onclick="copyCode()">Copy</button>
+                            <p class="language-prog">JavaScript<button class="btn" onclick="copyCode()">Copy</button>
                             </p>
                         </div>
                         <code style="border: 1px solid gray;"><p style="margin-left: 15px;">
@@ -149,9 +149,8 @@ function multiply(a, b) {
 
     <footer class="footer-bs">
         <div class="contact-links">
-            <a id="profile-link" href="https://github.com/geratw" target="_blank" class="year contact-details "
-                style="text-decoration: none;"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://rs.school/js/" class="contact-details"><img class="rs_image" src="image/rs_school_js.svg">
+            <a id="profile-link" href="https://github.com/geratw" class="year contact-details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://rs.school/js/" class="contact-details"><img class="rs-image" src="image/rs_school_js.svg">
             </a>
             <p class="contact-details year creates">© 2023 by Orekhovsky Maxim</p>
 

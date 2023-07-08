@@ -1,4 +1,4 @@
-const navLinks = document.querySelectorAll('.nav__item a');
+const navLinks = document.querySelectorAll('.nav-item a');
 
 navLinks.forEach(function(link) {
   link.addEventListener('click', function(e) {
@@ -21,22 +21,18 @@ function copyCode() {
     var codeElement = document.querySelector(".code-window code");
     var codeText = codeElement.innerText;
 
-    // Создаем временный элемент textarea для копирования текста
     var textarea = document.createElement("textarea");
     textarea.value = codeText;
     document.body.appendChild(textarea);
 
-    // Выделяем текст внутри textarea
     textarea.select();
-    textarea.setSelectionRange(0, 99999); // Для мобильных устройств
+    textarea.setSelectionRange(0, 99999); 
 
-    // Копируем выделенный текст в буфер обмена
     document.execCommand("copy");
 
-    // Удаляем временный элемент textarea
     document.body.removeChild(textarea);
 
-    // Изменяем текст кнопки на "Скопировано!"
     var copyButton = document.querySelector(".btn");
     copyButton.innerText = "Copied!";
 }
+
