@@ -49,6 +49,7 @@ h2 {
 
 .portrait {
   border-radius: 50%;
+
   max-width: 350px;
   margin: auto;
   display: block;
@@ -138,7 +139,7 @@ h2 {
   left: 0;
   top: 0;
   width: 20px;
-  height: 36px;
+  height: 100%;
   background-color: #f2c100;
 }
 
@@ -280,7 +281,12 @@ code {
   font-size: 18px;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .language-prog {
   margin-left: 15px;
+  min-width: 600px;
 }
 
