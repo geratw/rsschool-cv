@@ -5,7 +5,7 @@
     <title>Orekhovsky Maxim CV</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
@@ -16,13 +16,13 @@
     <header>
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-                <li class="nav-item"><a href="#summary">Summary</a></li>
-                <li class="nav-item"><a href="#experience">Experience</a></li>
-                <li class="nav-item"><a href="#education">Education</a></li>
-                <li class="nav-item"><a href="#code-example">Code Example</a></li>
-                <li class="nav-item"><a href="#skills">Skills</a></li>
-                <li class="nav-item"><a href="#language-proficiency">Language Proficiency</a></li>
+                <li class="nav-item"><a href="#contact" onclick="smoothScroll(event, '#contact')">Contact</a></li>
+                <li class="nav-item"><a href="#summary" onclick="smoothScroll(event, '#summary')">Summary</a></li>
+                <li class="nav-item"><a href="#experience" onclick="smoothScroll(event, '#experience')">Experience</a></li>
+                <li class="nav-item"><a href="#education" onclick="smoothScroll(event, '#education')">Education</a></li>
+                <li class="nav-item"><a href="#code-example" onclick="smoothScroll(event, '#code-example')">Code Example</a></li>
+                <li class="nav-item"><a href="#skills" onclick="smoothScroll(event, '#skills')">Skills</a></li>
+                <li class="nav-item"><a href="#language-proficiency" onclick="smoothScroll(event, '#language-proficiency')">Language Proficiency</a></li>
             </ul>
         </nav>
     </header>
@@ -70,7 +70,7 @@
                     <ul class="skills">
                         <li><strong>Programming Languages:</strong>
                         </li>
-                        <li>C &#124 C++ &#124 HTML5 &#124 CSS3</li>
+                        <li>C &#124; C++ &#124; HTML5 &#124; CSS3</li>
                         <li><strong>Frameworks</strong></li>
                         <li>QT</li>
                         <li><strong>Version Control Systems:</strong>
@@ -137,10 +137,10 @@
                             <p class="language-prog">JavaScript<button class="btn" onclick="copyCode()">Copy</button>
                             </p>
                         </div>
-                        <code style="border: 1px solid gray;"><p style="margin-left: 15px;">
-function multiply(a, b) {
-    return a * b;
-}</p></code>
+                        <code style="border: 1px solid gray;">
+  function multiply(a, b) {
+      return a * b;
+  }</code>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@ function multiply(a, b) {
     <footer class="footer-bs">
         <div class="contact-links">
             <a id="profile-link" href="https://github.com/geratw" class="year contact-details"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://rs.school/js/" class="contact-details"><img class="rs-image" src="image/rs_school_js.svg">
+            <a href="https://rs.school/js/" class="contact-details"><img class="rs-image" src="image/rs_school_js.svg" alt="rs_school image">
             </a>
             <p class="contact-details year creates">© 2023 by Orekhovsky Maxim</p>
 
